@@ -24,10 +24,10 @@ app.get('/contactos/:id([0-9]+)', ContactosController.consultarContactosPorId);
 app.post('/contactos', ContactosController.indexPost)
 app.patch('/contactos/:id([0-9]+)', ContactosController.itemPatch);
 
-app.get('/confUsuario', ConfUsuarioController.GetConfiguracion);
-app.get('/confUsuario/:id([0-9]+)', ConfUsuarioController.consultarContactosPorId);
-app.post('/confUsuario', ConfUsuarioController.indexPost)
-app.patch('/confUsuario/:id([0-9]+)', ConfUsuarioController.itemPatch);
+app.get('/confusuario', ConfUsuarioController.GetConfiguracion);
+app.get('/confusuario/:id([0-9]+)', ConfUsuarioController.consultarContactosPorId);
+app.post('/confusuario', ConfUsuarioController.indexPost)
+app.patch('/confusuario/:id([0-9]+)', ConfUsuarioController.itemPatch);
 
 
 app.get('/', function(req, res) {

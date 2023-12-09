@@ -1,46 +1,57 @@
+# Mi Primer API RESTful con Node.js
 
+Proyecto de demostración para clases de desarrollo de APIs utilizando Node.js,
+con implementación en contenedores de Docker.
 
-# MI primer servidor node en Node
+## Tabla de contenido
 
-## comandos
+- [Mi Primer API RESTful con Node.js](#mi-primer-api-restful-con-nodejs)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Requisitos de instalación](#requisitos-de-instalación)
+  - [Instrucciones para la instalación](#instrucciones-para-la-instalación)
+  - [Documentación detallada](#documentación-detallada)
+  - [Enlaces externos](#enlaces-externos)
 
-para correr el contenedor.
+## Requisitos de instalación
 
-```bash
-    docker-compose up -d
+Asegúrate de tener instalado y configurado Docker antes de comenzar.
+
+- [Docker](https://www.docker.com)
+
+## Instrucciones para la instalación
+
+1. Clonar el repositorio en la máquina local:
+
+```sh
+git clone https://github.com/AntonioGr05/mi-primer-API-REST.git
 ```
 
-para entrar a la consola del contenedor.
+1. Navegar al directorio del proyecto:
 
-```bash
-    docker exec -it "nombre del container" sh
+```sh
+cd docker
 ```
 
-para emepezar con node ponemos el siguiente comnado.
+2. Ejecutar el siguiente comando para iniciar los contenedores:
 
-```bash
-    npm init 
+```sh
+docker-compose up -d
 ```
 
-para instalar express
+> **IMPORTANTE**
+>
+> Debe estar iniciado el Docker engine para ejecutar el comando anterior,
+> si no lo está, se devolverá un mensaje de error indicando que no se
+> encontró el docker daemon.
 
-```bash
-    npm install express --save
-```
+1. La API estará disponible en `http://localhost:3000`.
 
-## archivos a ignorar
+## Documentación detallada
 
-ignorar directorios node_modules y .vscode
+Para obtener información detallada sobre los endpoints y cómo utilizar la API,
+consulta la [documentación detallada](./docs/README.md).
 
-## crear archivo .dockerignore
+## Enlaces externos
 
-```bash
-    node_modules
-    .vscode
-```
-
-para instalar las dependencias desde el inicio del contenedor.
-
-```docker
-    RUN npm install
-```
+- [Node.js](https://www.nodejs.org)
+- [Docker](https://www.docker.com)
