@@ -10,7 +10,7 @@ Permite actualizar parcialmente la información de un mensaje específico median
 
 ## Ejemplo de Solicitud
 
-```json
+```
 PATCH /mensajes/3
 {
     "contenido": "Saludos, ¿cuándo podemos reunirnos para discutir el proyecto?"
