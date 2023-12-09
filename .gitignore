@@ -1,0 +1,4 @@
+# ignorar node modules
+/node_modules
+
+/.secrets/*
