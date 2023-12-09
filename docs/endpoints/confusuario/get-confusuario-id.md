@@ -1,18 +1,18 @@
-<!-- Documentacion de un endpoint get que trae un item especifico de la coleccion contactos -->
+<!-- Documentacion de un endpoint get que trae un item especifico de la coleccion confusuario -->
 
-# Endpoint: `GET /contactos/{id}`
+# Endpoint: `GET /confusuario/{id}`
 
-Permite obtener un contacto específico mediante su identificador único.
+Permite obtener un confusuario específico mediante su identificador único.
 
 ## Parámetros de URL
 
-- `{id}` (obligatorio): Identificador único del contacto que se desea obtener.
+- `{id}` (obligatorio): Identificador único del confusuario que se desea obtener.
 
 ## Ejemplo de Solicitud
 
 ```http
 
-GET /contactos/1
+GET /confusuario/1
 
 ```
 
@@ -23,7 +23,8 @@ GET /contactos/1
 {
     "id": 1,
     "usuario_id": 1,
-    "contacto_id": 2,
+    "notificaciones_activas": 1,
+    "preferencias_privacidad": "Alta"
 }
 
 ```
@@ -36,8 +37,7 @@ GET /contactos/1
   {
     "errno": 404,
     "error": "not_found",
-    "error_description": "No se encontró el Contacto."
-  }
+    }
   ```
 
 - Código 500 Internal Server Error:
@@ -52,4 +52,4 @@ GET /contactos/1
 
 ## Notas Adicionales
 
-- Asegurate de incluir un ID válido en la solicitud para obtener el contacto en específico.
+- Asegurate de incluir un ID válido en la solicitud para obtener el confusuario en específico.

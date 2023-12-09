@@ -52,6 +52,4 @@ PATCH /contactos/3
 
 - Asegurate de incluir un ID válido en la solicitud para actualizar la información sobre el contacto en específico.
 - Recuerda que los campos que no se incluyan en la solicitud no serán actualizados.
-
-
-
+- Recuerda que el usuario y el contacto deben ser usuarios existentes.
