@@ -3,10 +3,10 @@ const MensajesModel = require('../models/mensajesModel');
 class MensajesController {
 
     /**
-     * Recupera la coleccion de usuarios
+     * Recupera la coleccion de mensajes
      * 
      * ```http
-        * GET /usuarios
+        * GET /mensajes
         * Accept: application/json
      * ```
      */
@@ -17,19 +17,19 @@ class MensajesController {
     }
 
     /**
-        * Recibe una peticion para crear un nuevo usuario
+        * Recibe una peticion para crear un nuevo mensaje
         * 
         * ```http
-        * POST /usuarios
+        * POST /mensajes
         * Accept: application/json
         * Content-Type: application/json
         * 
         * {
-        *   "nombre": "Antonio",
-        *   "apellido": "Galvan",
-        *   "email": "ejemplo@correo.com",
-        *  "clave_usuario": "123456"
-        *   "fecha_registro": "1999-12-31"
+        *   "remitente_id": 1,
+        * "destinatario_id": 2,
+        * "contenido": "Hola, ¿cómo estás?",
+        * "fecha_envio": "2023-12-08"
+        * }
     */
 
     static async indexPost(req, res) {
@@ -46,6 +46,16 @@ class MensajesController {
         }
     }
 
+    /**
+     * consultar un mensaje por id
+     * 
+     * la funcion recibe un id de mensaje y regresa la informacion del mensaje
+     * 
+     * ```http
+     * GET /mensajes/:id
+     * ```
+     */
+
     static async consultarMensajePorId(req, res) {
         let id = req.params.id;
         let data = await MensajesModel.consultarMensajePorId(id);
@@ -56,6 +66,16 @@ class MensajesController {
         res.send(data[0]);
     }
 
+    /**
+     * Crea una sustitucion parcial de un mensaje
+     * recibe un id de mensaje y los campos a actualizar
+     * 
+     * ```http
+     * PATCH /usuarios/:id
+     * Accept: application/json
+     * Content-Type: application/json
+     * ```
+     */
 
     static async itemPatch(req, res) {
         try{

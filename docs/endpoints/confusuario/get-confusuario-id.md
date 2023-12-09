@@ -50,6 +50,10 @@ GET /confusuario/1
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./confusuarioisGET.png)
+
 ## Notas Adicionales
 
 - Asegurate de incluir un ID válido en la solicitud para obtener el confusuario en específico.

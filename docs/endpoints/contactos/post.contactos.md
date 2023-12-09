@@ -46,6 +46,10 @@ POST /contactos
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./contactosPost.png)
+
 ## Notas Adicionales
 
 - Recuerda se debe colocar correctamente la ruta para añadir un nuevo contacto.

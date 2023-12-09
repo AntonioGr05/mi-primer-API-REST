@@ -3,10 +3,10 @@ const ConfUsuarioModel = require('../models/confUsuarioModel');
 class ConfUsuarioController {
 
     /**
-     * Recupera la coleccion de usuarios
+     * Recupera la coleccion de una nueva configuracion
      * 
      * ```http
-        * GET /usuarios
+        * GET /confusuario
         * Accept: application/json
      * ```
      */
@@ -17,19 +17,18 @@ class ConfUsuarioController {
     }
 
     /**
-        * Recibe una peticion para crear un nuevo usuario
+        * Recibe una peticion para crear un nuevo confusuario
         * 
         * ```http
-        * POST /usuarios
+        * POST /confusuario
         * Accept: application/json
         * Content-Type: application/json
         * 
         * {
-        *   "nombre": "Antonio",
-        *   "apellido": "Galvan",
-        *   "email": "ejemplo@correo.com",
-        *  "clave_usuario": "123456"
-        *   "fecha_registro": "1999-12-31"
+        *    "usuario_id": 1,
+        *    "notificaciones_activas": 1,
+        *    "preferencias_privacidad": "Alta"
+        * }
     */
 
     static async indexPost(req, res) {
@@ -46,6 +45,17 @@ class ConfUsuarioController {
         }
     }
 
+    /**
+     * consultar una configuracion de usuatio por id
+     * 
+     * la funcion recibe un id de configuracion y regresa la informacion de la configuracion
+     * 
+     * ```http
+     * GET /confusuario/:id
+     * ```
+     */
+
+
     static async consultarContactosPorId(req, res) {
         let id = req.params.id;
         let data = await ConfUsuarioModel.consultarConfiguracionPorId(id);
@@ -56,6 +66,16 @@ class ConfUsuarioController {
         res.send(data[0]);
     }
 
+    /**
+     * Crea una sustitucion parcial de una configuracion
+     * recibe un id de configuracion y los campos a actualizar
+     * 
+     * ```http
+     * PATCH /confusuario/:id
+     * Accept: application/json
+     * Content-Type: application/json
+     * ```
+     */
 
     static async itemPatch(req, res) {
         try{

@@ -64,6 +64,10 @@ Permite obtener todos los datos de la coleccion de confUsuarios.
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./confUsuarioGET.png)
+
 ## Notas Adicionales
 
 - Recuerda se debe colocar correctamente la ruta para obtener todos los datos de la coleccion de confUsuarios.

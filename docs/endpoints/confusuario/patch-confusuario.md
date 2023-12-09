@@ -50,6 +50,10 @@ PATCH /confusuario/3
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./confUsuarioPATCH.png)
+
 ## Notas Adicionales
 
 - Asegurate de incluir un ID válido en la solicitud para actualizar la información sobre la configuracion de usuario en específico.

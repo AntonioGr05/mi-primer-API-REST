@@ -46,6 +46,10 @@ GET /usuarios
   }
   ``` 
 
+## Imagene de la respuesta en postman
+
+![imagen](./getUsuarios.png)
+
 ## Notas Adicionales
 
 - Recuerda se debe colocar correctamente la ruta para obtener la información de los usuarios.

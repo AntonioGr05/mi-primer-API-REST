@@ -52,6 +52,10 @@ GET /mensajes/1
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./mensajesidGET.png)
+
 ## Notas Adicionales
 
 - Asegurate de incluir un ID válido en la solicitud para obtener el mensaje en específico.

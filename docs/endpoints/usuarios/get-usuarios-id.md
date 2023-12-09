@@ -47,6 +47,10 @@ GET /usuario/3
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./usuariosidGET.png)
+
 ## Notas Adicionales
 
 - Asegurate de incluir un ID válido en la solicitud para obtener la información sobre el usuario en específico.

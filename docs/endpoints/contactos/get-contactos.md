@@ -59,6 +59,10 @@ GET /contactos
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./contactosGet.png)
+
 ## Notas Adicionales
 
 - Recuerda se debe colocar correctamente la ruta para obtener los contactos.

@@ -66,6 +66,10 @@ GET /mensajes
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./getMensajes.png)
+
 ## Notas Adicionales
 
 - Recuerda se debe colocar correctamente la ruta para obtener la lista de mensajes.

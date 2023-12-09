@@ -46,6 +46,10 @@ POST /confusuario
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./confUsuarioPOST.png)
+
 ## Notas Adicionales
 
 - Recuerda se debe colocar correctamente la ruta para añadir una nueva configuracion de usuario.

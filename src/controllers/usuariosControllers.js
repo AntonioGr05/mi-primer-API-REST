@@ -46,6 +46,15 @@ class UsuariosController {
         }
     }
 
+    /**
+     * consultar un usuario por id
+     * 
+     * la funcion recibe un id de usuario y regresa la informacion del usuario
+     * 
+     * ```http
+     * GET /usuarios/:id
+     * ```
+     */
     static async consultarUsuarioPorId(req, res) {
         let id = req.params.id;
         let data = await UsuariosModel.consultarUsuarioPorId(id);
@@ -56,6 +65,16 @@ class UsuariosController {
         res.send(data[0]);
     }
 
+    /**
+     * Crea una sustitucion parcial de un usuario
+     * recibe un id de usuario y los campos a actualizar
+     * 
+     * ```http
+     * PATCH /usuarios/:id
+     * Accept: application/json
+     * Content-Type: application/json
+     * ```
+     */
 
     static async itemPatch(req, res) {
         try{

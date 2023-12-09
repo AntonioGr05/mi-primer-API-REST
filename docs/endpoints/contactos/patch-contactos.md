@@ -48,6 +48,10 @@ PATCH /contactos/3
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./contactosPatch.png)
+
 ## Notas Adicionales
 
 - Asegurate de incluir un ID válido en la solicitud para actualizar la información sobre el contacto en específico.

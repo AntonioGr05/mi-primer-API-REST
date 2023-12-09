@@ -49,6 +49,10 @@ PATCH /usuarios/3
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./patchUsuarios.png)
+
 ## Notas Adicionales
 
 - Asegurate de incluir un ID válido en la solicitud para actualizar la información sobre el usuario en específico.

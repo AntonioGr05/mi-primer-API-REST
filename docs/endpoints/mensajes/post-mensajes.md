@@ -47,6 +47,10 @@ POST /mensajes
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./postMensaje.png)
+
 ## Notas Adicionales
 
 - Recuerda se debe colocar correctamente la ruta para añadir un nuevo mensaje.

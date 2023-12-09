@@ -50,6 +50,10 @@ GET /contactos/1
   }
   ```
 
+## Imagene de la respuesta en postman
+
+![imagen](./contactosidGET.png)
+
 ## Notas Adicionales
 
 - Asegurate de incluir un ID válido en la solicitud para obtener el contacto en específico.
