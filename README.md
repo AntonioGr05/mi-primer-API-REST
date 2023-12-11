@@ -1,7 +1,13 @@
 # Mi Primer API RESTful con Node.js
 
-Proyecto de demostración para clases de desarrollo de APIs utilizando Node.js,
-con implementación en contenedores de Docker.
+Este proyecto es una API RESTful desarrollada con Node.js y Express.js, que atiente a las necesidades de mi anteproyecto de una aplicacion de una mensajeria instantenea para dispositivos moviles.
+
+Atentiendo las siguientes Colecciones:
+
+- Usuarios
+- Contactos
+- Mensajes
+- configuracion Usuario
 
 ## Tabla de contenido
 

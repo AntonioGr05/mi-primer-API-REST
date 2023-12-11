@@ -47,7 +47,7 @@ PATCH /mensajes/3
   }
   ```
 
-## Imagene de la respuesta en postman
+## Imagen de la respuesta en postman
 
 ![imagen](./patchMensajes.png)
 

@@ -66,7 +66,7 @@ GET /mensajes
   }
   ```
 
-## Imagene de la respuesta en postman
+## Imagen de la respuesta en postman
 
 ![imagen](./getMensajes.png)
 

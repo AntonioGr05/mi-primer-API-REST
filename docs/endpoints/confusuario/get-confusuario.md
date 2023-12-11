@@ -64,7 +64,7 @@ Permite obtener todos los datos de la coleccion de confUsuarios.
   }
   ```
 
-## Imagene de la respuesta en postman
+## Imagen de la respuesta en postman
 
 ![imagen](./confUsuarioGET.png)
 

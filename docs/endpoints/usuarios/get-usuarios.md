@@ -44,9 +44,9 @@ GET /usuarios
     "error": "internal_error",
     "error_description": "Ocurrió un problema para procesar la solicitud"
   }
-  ``` 
+  ```
 
-## Imagene de la respuesta en postman
+## Imagen de la respuesta en postman
 
 ![imagen](./getUsuarios.png)
 

@@ -46,7 +46,7 @@ POST /confusuario
   }
   ```
 
-## Imagene de la respuesta en postman
+## Imagen de la respuesta en postman
 
 ![imagen](./confUsuarioPOST.png)
 
