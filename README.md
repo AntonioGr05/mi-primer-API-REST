@@ -2,7 +2,7 @@
 
 Este proyecto es una API RESTful desarrollada con Node.js y Express.js, que atiente a las necesidades de mi anteproyecto de una aplicacion de una mensajeria instantenea para dispositivos moviles.
 
-Atentiendo las siguientes Colecciones:
+Atentiendo las siguientes Colecciones en una base de datos mysql:
 
 - Usuarios
 - Contactos
